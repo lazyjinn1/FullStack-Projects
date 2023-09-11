@@ -1,0 +1,1090 @@
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+BELOW ARE ALL SELECTORS FOR SPECIFIC TAGS*/
+
+/*These are the default settings for normal text*/
+body 
+{
+    margin:0 10% 0 10%;
+    background-color: whitesmoke;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color:black;
+    text-align:center;
+    width: 1fr;
+    height: auto;
+    box-sizing: border-box;
+}
+
+/*These are the default settings for <headers>*/
+header
+{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: auto;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+}
+
+/*These are the default settings for <footers>*/
+footer
+{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: auto;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+}
+
+/*This is the default setting for all <h1> (header 1)*/
+h1
+{
+    font-size: 35px;
+    font-weight: 700;
+    line-height: auto;
+    box-sizing: border-box;
+}
+
+/*This is the default setting for all <h2> (header 2)*/
+h2
+{
+    font-size: 25px;
+    font-weight: 700;
+    line-height: auto;
+    box-sizing: border-box;
+}
+
+/*This is the default setting for all <h3> (header 3)*/
+h3
+{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: auto;
+    box-sizing: border-box;
+}
+
+/*This is the default setting for all <li> (lists)*/
+li
+{
+    font-style:bold;
+    box-sizing: border-box;
+}
+
+/*This is the default setting for all <a> (anchor, for hyperlinks)*/
+a
+{
+    color: rgb(68, 20, 54);
+    transition: opacity 1s, transform .5s;
+    position: relative;
+    text-decoration: none;
+    
+}
+
+/*This is the default setting for when <a> has already been visited*/
+a:visited
+{
+    color: rgb(124, 53, 103);
+}
+
+/*This is the default setting for when <a> is being hovered or focused on*/
+a:hover
+{
+    transform: scale(1.2);
+    opacity: .6;
+}
+
+/*This is the default setting for when <a> is currently active*/
+a:active
+{
+    color:  rgb(124, 53, 103);
+}
+
+/*These are the default settings for <button>*/
+button
+{
+    border-color:black;
+    border-radius: 50px;
+    font-family: inherit;
+    color:rgb(10, 6, 6);
+    text-decoration: none;
+    padding: 4%;
+    box-sizing: border-box;
+    transition: transform .5s;
+}
+
+/*These are the default settings for when <button>s are hovered over*/
+button:hover
+{
+    background-color: black;
+    color: red; 
+    cursor: pointer;
+    transform:scale(1.1);
+    font-size:scale(1.2);
+    font-weight:bolder;
+}
+
+/*These are the default settings for when <button>s are currently active*/
+button:active
+{
+    cursor: pointer;
+    
+}
+
+/*These are the default settings for when <button>s have already been visited*/
+button:visited
+{
+    background-color:lightpink;
+}
+
+/*These are the default settings for all <img> (images) This one makes them all into circles*/
+img
+{
+    border-radius:50%;
+    box-sizing: border-box;
+}
+
+/*These are the default settings for all <th> (table headers)*/
+th
+{
+    font-size:23px;
+    letter-spacing:0px;
+    border-bottom: 1px inset black;
+    border-left:1px inset black;
+    border-right:1px inset black;
+    border-top: 1px inset black;
+    width: 100%;
+    background-color:whitesmoke;
+    color:black;
+}
+
+/*These are the default settings for all <td>*/
+td
+{
+    border: 1px solid black;
+    width: 100%;
+    color:black;
+    background-color:whitesmoke;
+}
+
+/*These are the default settings for the <Name> id*/
+#Name
+{
+    display:block;
+    justify-content:center;
+    margin: 0;
+}
+
+/*These are the default settings for all <form*/
+form
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2%;
+}
+
+
+
+
+
+/*ABOVE ARE ALL SELECTORS FOR SPECIFIC TAGS
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+BELOW ARE ALL SELECTORS FOR CLASSES PRESENT IN ALL PAGES*/
+
+
+
+
+
+/*These are the default settings for my <logo> in the top left corner*/
+.logo img
+{
+    border: 5px double darkred;
+    background-color: red;
+    max-width:5%;
+    max-height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    transition: transform .25s;
+}
+
+/*These are the default settings for my <logo> when hovered over*/
+.logo img:hover
+{
+    transform:scale(1.2);
+}
+
+/*These are the default settings for when the <Main-Menu> class*/
+.Main-Menu
+{
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    padding: 3%;
+    flex-direction: column;
+}
+
+/*These are the default settings for the <Name> id*/
+#Name
+{
+    color:#551542; 
+    font-style:bolder;
+    margin: 0 0 15px 0;
+}
+
+
+/*These are the default settings for any <img>s in the <Main-Menu> class*/
+.Main-Menu img
+{
+    width: 150px;
+    height: auto;
+}
+
+/*These are the default settings for the <Title> class - contains Main Profile Picture and Exercise #*/
+.Title
+{
+    flex: 0 1 20%;
+    color:#551542; 
+    font-style:bolder;
+}
+
+/*These are the default settings for the <Links> class*/
+.Links
+{
+    position: relative;
+    box-sizing:border-box;
+    text-align:center;
+    padding: 20px;
+    
+}
+
+/*These are the default settings for the <social-media> class*/
+.social-media
+{
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/*These are the default settings for all <page-footer>s*/
+.page-footer
+{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content:center;
+
+}
+
+/*These are the settings for all <img> tags in the <page-footer> class*/
+.page-footer img
+{
+    width: 80%;
+    height: auto;
+    transition: transform .25s;
+}
+
+/*These settings dictate the animation for when hovering over images<img> in the <page-footer> class*/
+.page-footer img:hover
+{
+    transform:scale(1.2);
+}
+
+.page-footer a
+{
+    width: 80%;
+    height: auto;
+    transition: transform .25s;
+}
+
+/*These settings dictate the animation for when hovering over images<img> in the <page-footer> class*/
+.page-footer a:hover
+{
+    transform:scale(1.2);
+}
+
+/*These are the settings for the <footer-title> id*/
+#footer-title
+{
+    margin-bottom:5px;
+    font-size: 150%;
+}
+
+/*This is a setting override for the <page-footer> class if the screen width is less than 1000px*/
+@media (max-width: 1000px)
+{
+    .page-footer
+    {
+        flex-wrap: wrap;
+    }
+    .page-footer a
+    {
+        font-size: 50%;
+    }
+}
+
+/*These are the settings for the <a> tag in the <Main-Menu> class*/
+.Main-Menu a
+{
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+    font-size: 20px;
+    color:#551542;
+}
+
+.directory
+{
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10%;
+    grid-template-rows: auto;
+    justify-content: center;
+    width:1fr;
+    
+}
+
+@media (max-width:1400px)
+{
+    .directory
+    {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
+        font-size: 50%;
+    }
+
+    h1
+    {
+        font-size:50%;
+    }
+
+    .directory a
+    {
+        border-bottom: 1px solid #551542;
+        border-top: 1px solid #551542;
+    }
+}
+
+@media (max-width:500px)
+{
+    .directory
+    {
+        grid-template-columns: 50% ;
+        grid-template-rows: auto auto auto auto;
+        font-size: 25%;
+    }
+}
+
+/*These are the settings for hovering over the <a> tag in the <directory> class*/
+.directory a:hover
+{
+    opacity:100%;
+}
+
+/*These are the settings for the lines before and after each tab in the <directory> class*/
+.directory a:before, .directory a:after
+{
+    position: absolute;
+    opacity: 1;
+    height: 100%;
+    width: 2px;
+    content: '';
+    background: #551542;
+    transition: all .3s;
+}
+
+/*These show the locations for the line that comes before each tab*/
+.directory a:before
+{
+    left: 0;
+    top: 0;
+}
+
+/*These show the locations for the line that comes after each tab*/
+.directory a:after
+{
+    right: 0;
+    bottom: 0;
+}
+
+/*These are the animation settings for the lines before and after each tab in the <directory> class*/
+.directory a:hover:before, .directory a:hover:after
+{
+    opacity: 100%;
+    height: 2px;
+    width: 100%;
+}
+
+
+
+/*ABOVE ARE ALL SELECTORS FOR CLASSES PRESENT IN ALL PAGES
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+BELOW ARE ALL SELECTORS FOR CLASSES PRESENT IN INDEX.HTML*/
+
+
+
+
+
+/*These are the default settings for the <default-links> class*/
+.default-links
+{
+    display:grid;
+    align-items:center;
+    margin: 0 30% 0 30%;
+    font-style:bolder;
+}
+
+/*These are the default settings for the <form> tag in the <default-links> class*/
+.default-links form
+{
+    grid-template-columns: 1fr;
+}
+
+/*These are the default settings for the <button> tag in the <default-links> class*/
+.default-links button
+{
+    color: white;
+    background-color: rgb(75, 18, 51);
+    font-size:100%;
+}
+
+/*These are the default settings for when the <button> tag is hovered over in the <default-links> class*/
+.default-links button:hover
+{
+    transform:scale(1.1);
+    font-size:scale(1.2);
+    font-weight:bold;
+}
+
+#Introduction
+{
+    font-size: large;
+    font-weight: 500;
+}
+
+#Jeriko-Carrera
+{
+    font-weight:bolder;
+}
+
+
+
+
+/*ABOVE ARE ALL SELECTORS FOR CLASSES PRESENT IN INDEX.HTML
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+BELOW ARE ALL SELECTORS FOR CLASSES PRESENT IN ABOUT.HTML*/
+
+
+
+
+
+/*These are the default settings for the <About-Me> class*/
+.About-Me
+{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 3;
+    flex-shrink: 3;
+    flex-basis: 500px;
+    height: auto;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+/*This is a setting override for the <About-Me> class if the screen width is less than 1000px*/
+@media (max-width: 1000px)
+{
+    .About-Me
+    {
+        flex-wrap:wrap;
+    }
+}
+
+/*These are the default settings for the <interests> class*/
+.interests
+{
+    text-align:left;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    color:black;
+}
+
+/*These are the default settings for the <interest-title> id*/
+#interest-title
+{
+    font-size: 25px;
+    font-weight: 700;
+    text-align:center;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    width:100%;
+    background-color: #551542;
+    color:white;
+    border-radius: 10% / 50%;
+
+}
+
+/*These are the default settings for the <interests-list> class*/
+.interests-list
+{
+    box-sizing:border-box;
+    text-align:center;
+    padding: 20px;
+    border: 1px solid black;
+    color:black;
+    background-color:#551542;
+    margin:0;
+    list-style-type: none;
+    border-radius: 50%;
+}
+
+/*These are the default settings for the <li> tag in the <interests-list> class*/
+.interests-list li
+{
+    border: 1px solid black;
+    width: 100%;
+    color:black;
+    background-color:whitesmoke;
+    padding: 0 10px 0 10px;
+    border-radius: 10% / 50%;
+}
+
+/*These are the default settings for the <skills> class*/
+.skills
+{
+    box-sizing:border-box;
+    text-align:center;
+    padding: 20px;
+    border: 1px solid black;
+    background-color: #551542;
+    color:black;
+    border-radius: 50%;
+    width:35%;
+    flex-shrink: 5;
+}
+
+/*These are the default settings for the <skills-title> id*/
+#skills-title
+{
+    font-size: 25px;
+    font-weight: 700;
+    text-align:center;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: #551542;
+    color:white;
+    border-radius: 10% / 50%;
+}
+
+/*These are the default settings for the <td> tag in the <skills> class*/
+.skills td
+{
+    border-radius: 10% / 50%;
+    font-size:90%;
+}
+
+/*These are the default settings for the <th> tag in the <skills> class*/
+.skills th
+{
+    border-radius: 30px;
+    padding:0px 10px 0 10px;
+}
+
+/*These are the default settings for the <button> class*/
+.button
+{
+    display: inline-block;
+    padding: 17px;
+    transition: transform .5s, border-radius .5s;
+    background-color:#551542;
+    border-radius:30% 50%;
+    font-weight:bold;
+}
+
+/*These are the default settings for the hovering and focusing on a <a> tag in the <button> class */
+.button a:hover, .button a:focus
+{
+    cursor: pointer;
+    transform: scale(2);
+    border-radius: 50% 30%;
+}
+
+/*These are the default settings for the when a <a> tag in the <button> class has been visited*/
+.button a:visited
+{
+    color:white;
+}
+
+/*Animation guidelines for the sun*/
+@keyframes color-change-sun
+{
+    0%
+    {
+      fill: #edc655;
+    }
+
+    50% 
+    {
+        fill: #fcffad;
+    }
+
+    100% 
+    {
+      fill: #f76414;
+    }
+}
+
+/*Animation activation for the sun*/
+.sun 
+{
+    animation: 7s color-change-sun infinite alternate linear;
+}
+
+/*Animation guidelines for the cloud in the right*/
+@keyframes cloud-move
+{
+    0%
+    {
+        transform: translate(0, 0px);
+    }
+
+    20%
+    {
+        transform: translate(97px, 0px);
+    }
+
+    40%
+    {
+        transform: translate(145px, 0px);
+    }
+
+    60%
+    {
+        transform: translate(287px, 0px);
+    }
+
+    80%
+    {
+        transform: translate(361px, 0px);
+    }
+
+    100%
+    {
+        transform: translate(400px, 0px);
+    }
+}
+
+/*Animation activation for the cloud on the right*/
+.cloud-front
+{
+    animation: 40s cloud-move infinite alternate linear;
+}
+
+/*Animation guidelines for the cloud in the left*/
+@keyframes cloud-move-reverse 
+{
+    0%
+    {
+      transform: translate(446px, 48px);
+    }
+
+    20%
+    {
+      transform: translate(375px, 48px);
+    }
+
+    40%
+    {
+      transform: translate(296px, 48px);
+    }
+
+    60%
+    {
+      transform: translate(216px, 48px);
+    }
+
+    80%
+    {
+      transform: translate(140px, 48px);
+    }
+
+    100%
+    {
+      transform: translate(54px, 48px);
+    }
+}
+
+
+/*Animation activation for the cloud on the left*/
+.cloud-back
+{
+    animation: 30s cloud-move-reverse infinite alternate linear;
+}
+
+/*These are the default settings for the <about-picture> id*/
+#about-picture
+{
+    width: 50%;
+    height: auto;
+}
+
+
+
+/*ABOVE ARE ALL SELECTORS FOR CLASSES PRESENT IN ABOUT.HTML
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+BELOW ARE ALL SELECTORS FOR CLASSES PRESENT IN CONTACT.HTML*/
+
+
+
+
+
+/*These are the default settings for the <contact-me> class*/
+.contact-me
+{
+    box-sizing:border-box;
+    margin: 0 20% 0 20%;
+    text-align:left;
+    padding: 20px;
+    width: 1fr;
+    list-style:none;
+    text-align: center;
+    margin: 0;
+    
+}
+
+.contact-me a
+{
+    transition: transform .8s rotateX .5s;
+    color:#a04d87;
+}
+
+.contact-me a:hover, .contact-me a:focus
+{
+    display:inline-block;
+    transform:scale(1.3);
+    font-size:scale(1.3);
+    font-weight:bolder;
+    color:#b017b3;
+    opacity:1;
+    text-decoration: none;
+    transform:rotate(5deg);
+}
+
+.contact-me p
+{
+    transition: transform .1s;
+}
+
+.contact-me p:hover, .contact-me p:focus
+{
+    display:inline-block;
+    transform:scale(1.3);
+    font-size:scale(1.3);
+    font-weight:bolder;
+    color:#b017b3;
+    opacity:1;
+    text-decoration: none;
+}
+
+/*These are the default settings for the <contact-form> id*/
+#contact-form
+{
+    display:grid;
+    margin: 2% 10% 10% 10%;
+    grid-template-columns: 20% 20% 20% 40%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    justify-content: center;
+    grid-row-gap: 20px;
+    grid-column-gap: 5px;
+}
+
+/*These are the default settings for the <input> tag in the <contact-form> id*/
+#contact-form input
+{
+    height: auto;
+    border-left: 1px solid black;
+    border-top: 2px solid black;
+    border-right: 4px solid black;
+    border-bottom: 0;
+    font-size: 15px;
+    border-radius: 25% 10%;
+}
+
+/*These are the default settings for the <textarea> tag in the <contact-form> id*/
+#contact-form textarea
+{
+    border-left: 1px solid black;
+    border-top: 2px solid black;
+    border-right: 4px solid black;
+    border-bottom: 0;
+    border-style: border-box;
+    width: auto;
+    height:auto;
+    font-size: 15px;
+    border-radius: 25% 10%;
+    text-align: center;
+    padding: 30px;
+    font-size: 120%;
+}
+
+/*These are the default settings for the <standard-label> class in the <contact-form> id*/
+#contact-form .standard-label
+{
+    border-left: 1px solid black;
+    border-top: 2px solid black;
+    border-right: 4px solid black;
+    border-bottom: 0;
+    border-radius: 25% 10%;
+    vertical-align: center;
+    font-size: 25px;
+}
+
+/*These are the default settings for the <email-tag> id in the <contact-form> id*/
+#contact-form #email-tag
+{
+    grid-column: 1;
+    grid-row: 1 / 2;
+    grid-row: span 2;
+}
+
+/*These are the default settings for the <contact-email> id in the <contact-form> id*/
+#contact-form #contact-email
+{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+/*These are the default settings for the <message-tag> id in the <contact-form> id*/
+#contact-form #message-tag
+{
+    grid-column: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+/*These are the default settings for the <message> id in the <contact-form> id*/
+#contact-form #message
+{
+    grid-column: 4;
+    grid-row: span 4;
+    grid-row: 1 / 5;
+}
+
+/*These are the default settings for the <telephone-tag> id in the <contact-form> id*/
+#contact-form #telephone-tag
+{
+    grid-column: 1;
+    grid-row: 3 / 4;
+    grid-row: span 2;
+}
+
+/*These are the default settings for the <telephone-number> id in the <contact-form> id*/
+#contact-form #telephone-number
+{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+/*These are the default settings for the <submit-message> id in the <contact-form> id*/
+#contact-form #submit-message
+{
+    margin-bottom:3%;
+    margin-top:3%;
+    grid-column: 1 / 5;
+    grid-row: 5;
+    width: auto;
+    height: 140%;
+    font-size: 20px;
+    color: white;
+    background-color: #551542;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 3px;
+}
+
+/*This is a setting override for the <contact-form> class if the screen width is less than 1300px*/
+@Media (max-width: 1300px)
+{
+    #contact-form
+    {
+        display:grid;
+        margin: 3%;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: auto;
+        justify-content: center;
+        grid-row-gap: 30px;
+        grid-column-gap: 10px;
+    }
+
+    #contact-form input
+    {
+        font-size: 10px;
+    }
+
+    #contact-form textarea
+    {
+        font-size: 12px;
+    }
+
+    #contact-form .standard-label
+    {
+        grid-column: 1;
+        font-size: 80%;
+    }
+
+    #contact-form #email-tag
+    {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #contact-form #contact-email
+    {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    #contact-form #telephone-tag
+    {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #contact-form #telephone-number
+    {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    #contact-form #message-tag
+    {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    #contact-form #message
+    {
+        grid-column: 2;
+        grid-row: 1 / 2;
+        grid-row: span 2;
+    }
+}
+
+
+
+
+
+/*ABOVE ARE ALL SELECTORS FOR CLASSES PRESENT IN CONTACT.HTML
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+BELOW ARE ALL SELECTORS FOR CLASSES PRESENT IN WORK.HTML*/
+
+
+
+
+
+/*These are the default settings for <project-item> IF the browser does not support grids*/
+.project-item 
+{
+    display: inline-block;
+    width: 33%;
+}
+
+/*These are the default settings for <project-item> and <Projects> IF the browser DOES support grids*/
+@supports (display:grid)
+{
+    .Projects
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 20px;
+        margin: 30px 100px 50px 100px;
+    }
+
+    .project-item 
+    {
+        background-color: lightgray;
+        padding: 10px;
+        width: auto;
+    }
+}
+
+/*This is a setting override for the <Projects> class, the last child of the <project-item> class, and the <h1> tag if the screen width is less than 1000px*/
+@media all and (max-width: 1000px)
+{
+    .Projects
+    {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        margin: 10px;
+    }
+
+    .project-item:last-child
+    {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+    }
+
+    h1
+    {
+        font-size: 22px;
+    }
+}
+
+/*This is a setting override for the <Projects> class, the last child of the <project-item> class, and the <h1> tag if the screen width is more than 1000px but less than 1300px*/
+@media all and (min-width:1001px) and (max-width: 1300px)
+{
+    .Projects
+    {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        margin: 10px;
+    }
+
+    .project-item:last-child
+    {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+    }
+
+    .projects-title
+    {
+        font-size: 28px;
+    }
+}
+
+@media all and (max-width: 750px)
+{
+    .Projects
+    {
+
+        grid-gap: 30px;
+        margin: 20px;
+    }
+}
+
+/* simple color change for the links in the Projects page */
+.Projects a
+{
+    color: darkred;
+}
+
+.Projects a:hover
+{
+    transform:scale (1.2);
+}
+
+
+
+
+
+/*ABOVE ARE ALL SELECTORS FOR CLASSES PRESENT IN WORK.HTML
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+THIS IS THE END FOR NOW*/
+
