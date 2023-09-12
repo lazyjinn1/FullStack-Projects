@@ -30,7 +30,7 @@ body {
     margin: 0 10% 0 10%;
     background-color: var(--background-color);
     font-family: "Rubik", sans-serif;
-    font-weight: var(default-font-weight);;
+    font-weight: var(--default-font-weight);;
     font-size: 16px;
     line-height: 1.6;
     color: var(--secondary-color);
@@ -42,8 +42,8 @@ body {
   /*These are the default settings for <headers>*/
   header {
     font-size: 18px;
-    font-weight: var(header-font-weight);;
-    word-spacing: var(default-word-spacing);;
+    font-weight: var(--header-font-weight);;
+    word-spacing: var(--default-word-spacing);;
     letter-spacing: 1px;
     box-sizing: border-box;
   }
@@ -51,8 +51,8 @@ body {
   /*These are the default settings for <footers>*/
   footer {
     font-size: 18px;
-    font-weight: var(header-font-weight);;
-    word-spacing: var(default-word-spacing);;
+    font-weight: var(--header-font-weight);;
+    word-spacing: var(--default-word-spacing);;
     letter-spacing: 1px;
     box-sizing: border-box;
   }
@@ -60,21 +60,21 @@ body {
   /*This is the default setting for all <h1> (header 1)*/
   h1 {
     font-size: 35px;
-    font-weight: var(header-font-weight);;
+    font-weight: var(--header-font-weight);;
     box-sizing: border-box;
   }
   
   /*This is the default setting for all <h2> (header 2)*/
   h2 {
     font-size: 25px;
-    font-weight: var(header-font-weight);;
+    font-weight: var(--header-font-weight);;
     box-sizing: border-box;
   }
   
   /*This is the default setting for all <h3> (header 3)*/
   h3 {
     font-size: 18px;
-    font-weight: var(header-font-weight);;
+    font-weight: var(--header-font-weight);;
     box-sizing: border-box;
   }
   
@@ -120,7 +120,7 @@ body {
     color: var(--button-color);
     cursor: pointer;
     transform: scale(1.1);
-    font-weight: var(bolder-font-weight);;;
+    font-weight: var(--bolder-font-weight);;;
   }
   
   /*These are the default settings for when <button>s are currently active*/
@@ -356,7 +356,7 @@ body {
   }
   .default-links button:hover {
     transform: scale(1.1);
-    font-weight: var(bold-font-weight);;;
+    font-weight: var(--bold-font-weight);;;
   }
   
   #Introduction {
@@ -365,7 +365,7 @@ body {
   }
   
   #Jeriko-Carrera {
-    font-weight: var(bolder-font-weight);;;
+    font-weight: var(--bolder-font-weight);;;
   }
   
   /*ABOVE ARE ALL SELECTORS FOR CLASSES PRESENT IN INDEX.HTML
@@ -397,7 +397,7 @@ body {
   }
   .About-Me .interests #interest-title {
     font-size: 25px;
-    font-weight: var(header-font-weight);;
+    font-weight: var(--header-font-weight);;
     text-align: center;
     border: 1px solid var(--secondary-color);
     display: flex;
@@ -443,7 +443,7 @@ body {
   }
   .About-Me .skills #skills-title {
     font-size: 25px;
-    font-weight: var(header-font-weight);;
+    font-weight: var(--header-font-weight);;
     text-align: center;
     border: 1px solid var(--secondary-color);
     box-sizing: border-box;
@@ -470,7 +470,8 @@ body {
     transition: transform 0.5s, border-radius 0.5s, box-shadow 0.5s;
     background-color: var(--primary-color);
     border-radius: 30% 50%;
-    font-weight: var(bold-font-weight);;;
+    font-weight: var(--bold-font-weight);
+    color: white;
   }
   
   /*These are the default settings for the <button> class*/
@@ -480,6 +481,7 @@ body {
     border-radius: 50% 30%;
     opacity: 1;
     box-shadow: var(--AboutMe-box-shadow);
+    color: white;
   }
   .button a:visited {
     color: white;
@@ -597,7 +599,7 @@ body {
   .contact-me a:hover, .contact-me a:focus {
     display: inline-block;
     transform: scale(1.3);
-    font-weight: var(bolder-font-weight);;;
+    font-weight: var(--bolder-font-weight);;;
     color: var(--contactme-color);
     opacity: 1;
     text-decoration: none;
@@ -699,7 +701,7 @@ body {
     color: white;
     background-color: var(--primary-color);
     font-size: 25px;
-    font-weight: var(header-font-weight);;
+    font-weight: var(--header-font-weight);;
     padding: 3px;
     border-radius: 50% 10%;
   }
