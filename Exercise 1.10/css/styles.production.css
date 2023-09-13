@@ -75,7 +75,7 @@ li {
 
 /*This is the default setting for all <a> (anchor, for hyperlinks)*/
 a {
-  color: undefined;
+  color: #581417;
   -webkit-transition: opacity 1s, -webkit-transform 0.5s;
   transition: opacity 1s, -webkit-transform 0.5s;
   -o-transition: opacity 1s, transform 0.5s;
@@ -83,14 +83,18 @@ a {
   transition: opacity 1s, transform 0.5s, -webkit-transform 0.5s;
   position: relative;
   text-decoration: none;
+  z-index:0;
 }
 
 /*This is the default setting for when <a> has already been visited*/
 a:visited {
-  color: undefined;
+  color: #581417;
 }
 a:active {
-  color: undefined;
+  color: #581417;
+}
+a:focus {
+  color: #581417;
 }
 
 /*This is the default setting for when <a> is being hovered or focused on*/
@@ -99,6 +103,7 @@ a:hover {
       -ms-transform: scale(1.2);
           transform: scale(1.2);
   opacity: 0.6;
+  z-index:50;
 }
 
 /*These are the default settings for <button>*/
@@ -116,6 +121,9 @@ button {
   -o-transition: transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
+  position:relative;
+  z-index: 0;
+  float: left;
 }
 
 /*These are the default settings for when <button>s are hovered over*/
@@ -123,18 +131,19 @@ button:hover {
   background-color: black;
   color: #0a0606;
   cursor: pointer;
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
-  font-weight: 1400;;;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  font-weight: bolder;
+  z-index:50;
 }
 
 /*These are the default settings for when <button>s are currently active*/
 button:active {
   cursor: pointer;
-  -webkit-transform: scale(0.9);
-      -ms-transform: scale(0.9);
-          transform: scale(0.9);
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
 }
 
 /*These are the default settings for when <button>s have already been visited*/
@@ -200,7 +209,7 @@ hr {
 BELOW ARE ALL SELECTORS FOR CLASSES PRESENT IN ALL PAGES*/
 /*These are the default settings for my <logo> in the top left corner*/
 .logo img {
-  border: undefined;
+  border: 5px double #581417;
   background-color: red;
   max-width: 5%;
   position: fixed;
@@ -405,6 +414,31 @@ BELOW ARE ALL SELECTORS FOR CLASSES PRESENT IN ALL PAGES*/
     border-bottom: 1px solid #551542;
     border-top: 1px solid #551542;
     background-color: white;
+    -webkit-transition: -webkit-transform .5s;
+    transition: -webkit-transform .5s;
+    -o-transition: transform .5s;
+    transition: transform .5s;
+    transition: transform .5s, -webkit-transform .5s;
+  }
+
+  .directory a:hover {
+    z-index: 50;
+  }
+
+  .directory a:active {
+    background-color: #551542;
+    color:white;
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+  }
+
+  .directory a:focus {
+    background-color: #551542;
+    color:white;
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
   }
 }
 @media (max-width: 500px) {
@@ -473,10 +507,10 @@ BELOW ARE ALL SELECTORS FOR CLASSES PRESENT IN INDEX.HTML*/
   font-size: 100%;
 }
 .default-links button:hover {
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
-  font-weight: 1000;;;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  font-weight: 1000;
 }
 
 #Introduction {
@@ -485,7 +519,7 @@ BELOW ARE ALL SELECTORS FOR CLASSES PRESENT IN INDEX.HTML*/
 }
 
 #Jeriko-Carrera {
-  font-weight: 1400;;;
+  font-weight: bolder;
 }
 
 /*ABOVE ARE ALL SELECTORS FOR CLASSES PRESENT IN INDEX.HTML
@@ -652,7 +686,7 @@ BELOW ARE ALL SELECTORS FOR CLASSES PRESENT IN ABOUT.HTML*/
 .button a:visited {
   color: white;
 }
-.button a:active {
+.button a:active, .button a:focus {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
@@ -830,6 +864,8 @@ BELOW ARE ALL SELECTORS FOR CLASSES PRESENT IN ABOUT.HTML*/
 /*ABOVE ARE ALL SELECTORS FOR CLASSES PRESENT IN ABOUT.HTML
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 BELOW ARE ALL SELECTORS FOR CLASSES PRESENT IN CONTACT.HTML*/
+
+
 /*These are the default settings for the <contact-me> class*/
 .contact-me {
   -webkit-box-sizing: border-box;
@@ -850,10 +886,10 @@ BELOW ARE ALL SELECTORS FOR CLASSES PRESENT IN CONTACT.HTML*/
 }
 .contact-me a:hover {
   display: inline-block;
-  -webkit-transform: scale(1.3);
-      -ms-transform: scale(1.3);
-          transform: scale(1.3);
-  font-weight: 1400;;;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  font-weight: bolder;
   color: #b017b3;
   opacity: 1;
   text-decoration: none;
@@ -863,10 +899,10 @@ BELOW ARE ALL SELECTORS FOR CLASSES PRESENT IN CONTACT.HTML*/
 }
 .contact-me a:focus {
   display: inline-block;
-  -webkit-transform: scale(1.3);
-      -ms-transform: scale(1.3);
-          transform: scale(1.3);
-  font-weight: 1400;;;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  font-weight: bolder;
   color: #b017b3;
   opacity: 1;
   text-decoration: none;
@@ -883,9 +919,9 @@ BELOW ARE ALL SELECTORS FOR CLASSES PRESENT IN CONTACT.HTML*/
 }
 .contact-me p:hover {
   display: inline-block;
-  -webkit-transform: scale(1.3);
-      -ms-transform: scale(1.3);
-          transform: scale(1.3);
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
   font-weight: bolder;
   color: #b017b3;
   opacity: 1;
@@ -893,9 +929,9 @@ BELOW ARE ALL SELECTORS FOR CLASSES PRESENT IN CONTACT.HTML*/
 }
 .contact-me p:focus {
   display: inline-block;
-  -webkit-transform: scale(1.3);
-      -ms-transform: scale(1.3);
-          transform: scale(1.3);
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
   font-weight: bolder;
   color: #b017b3;
   opacity: 1;
@@ -1078,8 +1114,6 @@ BELOW ARE ALL SELECTORS FOR CLASSES PRESENT IN CONTACT.HTML*/
   grid-row: 3;
 }
 #contact-form #submit-message {
-  margin-bottom: 3%;
-  margin-top: 3%;
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-column: 1/5;
@@ -1097,7 +1131,7 @@ BELOW ARE ALL SELECTORS FOR CLASSES PRESENT IN CONTACT.HTML*/
 }
 
 /*This is a setting override for the <contact-form> class if the screen width is less than 1300px*/
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
   #contact-form {
     display: -ms-grid;
     display: grid;
@@ -1110,15 +1144,15 @@ BELOW ARE ALL SELECTORS FOR CLASSES PRESENT IN CONTACT.HTML*/
         -ms-flex-pack: center;
             justify-content: center;
     grid-row-gap: 30px;
-    grid-column-gap: 10px;
+    grid-column-gap: 10px;  
   }
   #contact-form > *:nth-child(1) {
       -ms-grid-row: 1;
-      -ms-grid-column: 1;
+      -ms-grid-column: 1;  
   }
   #contact-form > *:nth-child(2) {
       -ms-grid-row: 1;
-      -ms-grid-column: 3;
+      -ms-grid-column: 3;  
   }
   #contact-form input {
     font-size: 10px;
@@ -1169,10 +1203,15 @@ BELOW ARE ALL SELECTORS FOR CLASSES PRESENT IN CONTACT.HTML*/
     grid-row: 1/2;
     grid-row: span 2;
   }
+  #contact-form #submit-message {
+    height: 50px;
+    width: auto;
+  }
 }
 /*ABOVE ARE ALL SELECTORS FOR CLASSES PRESENT IN CONTACT.HTML
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 BELOW ARE ALL SELECTORS FOR CLASSES PRESENT IN WORK.HTML*/
+
 .Projects a {
   color: darkred;
 }

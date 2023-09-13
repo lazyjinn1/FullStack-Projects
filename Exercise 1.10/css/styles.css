@@ -17,9 +17,12 @@
     --default-font-weight: 400;
     --header-font-weight: 700;
     --bold-font-weight: 1000;
-    --bolder-font-weight: 1400;
 
     --default-word-spacing: 5px;
+
+    --scale-up: scale(1.2);
+    --scale-normal: scale(1);
+    --scale-down: scale(.8);
   }
 
 /*ABOVE ARE ALL CSS VARIABLES
@@ -85,21 +88,23 @@ body {
   
   /*This is the default setting for all <a> (anchor, for hyperlinks)*/
   a {
-    color: var(--link-color);
+    color: var(--dark-red);
     transition: opacity 1s, transform 0.5s;
     position: relative;
     text-decoration: none;
+    z-index:0;
   }
   
   /*This is the default setting for when <a> has already been visited*/
-  a:visited, a:active {
-    color: var(--link-color);
+  a:visited, a:active, a:focus {
+    color: var(--dark-red);
   }
   
   /*This is the default setting for when <a> is being hovered or focused on*/
   a:hover {
-    transform: scale(1.2);
+    transform: var(--scale-up);
     opacity: 0.6;
+    z-index:50;
   }
   
   /*These are the default settings for <button>*/
@@ -112,6 +117,9 @@ body {
     padding: 4%;
     box-sizing: border-box;
     transition: transform 0.5s;
+    position:relative;
+    z-index: 0;
+    float: left;
   }
   
   /*These are the default settings for when <button>s are hovered over*/
@@ -119,14 +127,15 @@ body {
     background-color: var(--secondary-color);
     color: var(--button-color);
     cursor: pointer;
-    transform: scale(1.1);
-    font-weight: var(--bolder-font-weight);;;
+    transform: var(--scale-up);
+    font-weight: bolder;
+    z-index:50;
   }
   
   /*These are the default settings for when <button>s are currently active*/
   button:active {
     cursor: pointer;
-    transform: scale(0.9);
+    transform: var(--scale-normal);
   }
   
   /*These are the default settings for when <button>s have already been visited*/
@@ -187,7 +196,7 @@ body {
   BELOW ARE ALL SELECTORS FOR CLASSES PRESENT IN ALL PAGES*/
   /*These are the default settings for my <logo> in the top left corner*/
   .logo img {
-    border: 5px double var(--link-color);
+    border: 5px double var(--dark-red);
     background-color: red;
     max-width: 5%;
     position: fixed;
@@ -197,7 +206,7 @@ body {
     transition: transform 0.25s;
   }
   .logo img:hover {
-    transform: scale(1.2);
+    transform: var(--scale-up);
     box-shadow: var(--box-shadow-default);
   }
   
@@ -240,7 +249,7 @@ body {
     opacity: 1;
   }
   .page-footer img:hover {
-    transform: scale(1.2);
+    transform: var(--scale-up);
     opacity: 0.8;
   }
   .page-footer a {
@@ -310,6 +319,17 @@ body {
       border-bottom: 1px solid var(--primary-color);
       border-top: 1px solid var(--primary-color);
       background-color: white;
+      transition: transform .5s;
+    }
+
+    .directory a:hover {
+      z-index: 50;
+    }
+
+    .directory a:active, .directory a:focus {
+      background-color: var(--primary-color);
+      color:white;
+      transform: var(--scale-normal);
     }
   }
   @media (max-width: 500px) {
@@ -355,8 +375,8 @@ body {
     font-size: 100%;
   }
   .default-links button:hover {
-    transform: scale(1.1);
-    font-weight: var(--bold-font-weight);;;
+    transform: var(--scale-up);
+    font-weight: var(--bold-font-weight);
   }
   
   #Introduction {
@@ -365,9 +385,9 @@ body {
   }
   
   #Jeriko-Carrera {
-    font-weight: var(--bolder-font-weight);;;
+    font-weight: bolder;
   }
-  
+
   /*ABOVE ARE ALL SELECTORS FOR CLASSES PRESENT IN INDEX.HTML
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   BELOW ARE ALL SELECTORS FOR CLASSES PRESENT IN ABOUT.HTML*/
@@ -376,7 +396,7 @@ body {
     width: 60vw;
     height: auto;
   }
-  
+
   /*These are the default settings for the <About-Me> class*/
   .About-Me {
     display: flex;
@@ -486,7 +506,7 @@ body {
   .button a:visited {
     color: white;
   }
-  .button a:active {
+  .button a:active, .button a:focus {
     transform: scale(1);
     border-radius: 30% 50%;
   }
@@ -583,6 +603,8 @@ body {
   /*ABOVE ARE ALL SELECTORS FOR CLASSES PRESENT IN ABOUT.HTML
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   BELOW ARE ALL SELECTORS FOR CLASSES PRESENT IN CONTACT.HTML*/
+  
+  
   /*These are the default settings for the <contact-me> class*/
   .contact-me {
     box-sizing: border-box;
@@ -598,8 +620,8 @@ body {
   }
   .contact-me a:hover, .contact-me a:focus {
     display: inline-block;
-    transform: scale(1.3);
-    font-weight: var(--bolder-font-weight);;;
+    transform: var(--scale-up);
+    font-weight: bolder;
     color: var(--contactme-color);
     opacity: 1;
     text-decoration: none;
@@ -610,7 +632,7 @@ body {
   }
   .contact-me p:hover, .contact-me p:focus {
     display: inline-block;
-    transform: scale(1.3);
+    transform: var(--scale-up);
     font-weight: bolder;
     color: var(--contactme-color);
     opacity: 1;
@@ -691,8 +713,6 @@ body {
     grid-row: 3;
   }
   #contact-form #submit-message {
-    margin-bottom: 3%;
-    margin-top: 3%;
     grid-column: 1/5;
     grid-row: 5;
     width: auto;
@@ -707,7 +727,7 @@ body {
   }
   
   /*This is a setting override for the <contact-form> class if the screen width is less than 1300px*/
-  @media (max-width: 1300px) {
+  @media (max-width: 1400px) {
     #contact-form {
       display: grid;
       margin: 3%;
@@ -715,7 +735,7 @@ body {
       grid-template-rows: auto;
       justify-content: center;
       grid-row-gap: 30px;
-      grid-column-gap: 10px;
+      grid-column-gap: 10px;  
     }
     #contact-form input {
       font-size: 10px;
@@ -752,10 +772,15 @@ body {
       grid-row: 1/2;
       grid-row: span 2;
     }
+    #contact-form #submit-message {
+      height: 50px;
+      width: auto;
+    }
   }
   /*ABOVE ARE ALL SELECTORS FOR CLASSES PRESENT IN CONTACT.HTML
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   BELOW ARE ALL SELECTORS FOR CLASSES PRESENT IN WORK.HTML*/
+  
   .Projects a {
     color: darkred;
   }
