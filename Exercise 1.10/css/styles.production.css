@@ -649,11 +649,11 @@ BELOW ARE ALL SELECTORS FOR CLASSES PRESENT IN ABOUT.HTML*/
 #button {
   display: inline-block;
   padding: 17px;
-  -webkit-transition: border-radius 0.5s, -webkit-transform 0.5s, -webkit-box-shadow 0.5s;
-  transition: border-radius 0.5s, -webkit-transform 0.5s, -webkit-box-shadow 0.5s;
-  -o-transition: transform 0.5s, border-radius 0.5s, box-shadow 0.5s;
-  transition: transform 0.5s, border-radius 0.5s, box-shadow 0.5s;
-  transition: transform 0.5s, border-radius 0.5s, box-shadow 0.5s, -webkit-transform 0.5s, -webkit-box-shadow 0.5s;
+  -webkit-transition: border-radius 0.25s, -webkit-transform 0.5s, -webkit-box-shadow 0.5s;
+  transition: border-radius 0.25s, -webkit-transform 0.5s, -webkit-box-shadow 0.5s;
+  -o-transition: transform 0.5s, border-radius 0.25s, box-shadow 0.5s;
+  transition: transform 0.5s, border-radius 0.25s, box-shadow 0.5s;
+  transition: transform 0.5s, border-radius 0.25s, box-shadow 0.5s, -webkit-transform 0.5s, -webkit-box-shadow 0.5s;
   background-color: #551542;
   border-radius: 30% 50%;
   font-weight: 1000;
@@ -663,21 +663,9 @@ BELOW ARE ALL SELECTORS FOR CLASSES PRESENT IN ABOUT.HTML*/
 /*These are the default settings for the <button> class*/
 .button a:hover {
   cursor: pointer;
-  -webkit-transform: scale(2);
-      -ms-transform: scale(2);
-          transform: scale(2);
-  border-radius: 50% 30%;
-  opacity: 1;
-  -webkit-box-shadow: 1px 0px 15px rgba(0, 0, 0, 0.6);
-          box-shadow: 1px 0px 15px rgba(0, 0, 0, 0.6);
-  color: white;
-}
-.button a:focus {
-  cursor: pointer;
-  -webkit-transform: scale(2);
-      -ms-transform: scale(2);
-          transform: scale(2);
-  border-radius: 50% 30%;
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
   opacity: 1;
   -webkit-box-shadow: 1px 0px 15px rgba(0, 0, 0, 0.6);
           box-shadow: 1px 0px 15px rgba(0, 0, 0, 0.6);
@@ -690,7 +678,6 @@ BELOW ARE ALL SELECTORS FOR CLASSES PRESENT IN ABOUT.HTML*/
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
-  border-radius: 30% 50%;
 }
 
 /*Animation guidelines for the sun*/
