@@ -198,7 +198,7 @@ body {
   .logo img {
     border: 5px double var(--dark-red);
     background-color: red;
-    max-width: 5%;
+    max-width: 10%;
     position: fixed;
     top: 0;
     left: 0;
@@ -210,9 +210,9 @@ body {
     box-shadow: var(--box-shadow-default);
   }
 
-  @media(max-width: 700px){
+  @media(max-width: 500px){
     .logo img {
-      max-width: 20%;
+      max-width: 15%;
     }
   }
   
