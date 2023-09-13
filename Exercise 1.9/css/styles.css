@@ -773,7 +773,7 @@ body {
       grid-row: span 2;
     }
     #contact-form #submit-message {
-      height: 200px;
+      height: 50px;
       width: auto;
     }
   }
