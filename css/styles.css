@@ -209,6 +209,12 @@ body {
     transform: var(--scale-up);
     box-shadow: var(--box-shadow-default);
   }
+
+  @media(max-width: 700px){
+    .logo img {
+      max-width: 20%;
+    }
+  }
   
   /*These are the default settings for when the <Main-Menu> class*/
   .Main-Menu {
