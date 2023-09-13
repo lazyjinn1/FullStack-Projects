@@ -134,7 +134,7 @@ button:hover {
   -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
           transform: scale(1.2);
-  font-weight: 1400;
+  font-weight: bolder;
   z-index:50;
 }
 
@@ -519,7 +519,7 @@ BELOW ARE ALL SELECTORS FOR CLASSES PRESENT IN INDEX.HTML*/
 }
 
 #Jeriko-Carrera {
-  font-weight: 1400;
+  font-weight: bolder;
 }
 
 /*ABOVE ARE ALL SELECTORS FOR CLASSES PRESENT IN INDEX.HTML
@@ -889,7 +889,7 @@ BELOW ARE ALL SELECTORS FOR CLASSES PRESENT IN CONTACT.HTML*/
   -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
           transform: scale(1.2);
-  font-weight: 1400;;;
+  font-weight: bolder;
   color: #b017b3;
   opacity: 1;
   text-decoration: none;
@@ -902,7 +902,7 @@ BELOW ARE ALL SELECTORS FOR CLASSES PRESENT IN CONTACT.HTML*/
   -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
           transform: scale(1.2);
-  font-weight: 1400;;;
+  font-weight: bolder;
   color: #b017b3;
   opacity: 1;
   text-decoration: none;
@@ -1203,9 +1203,8 @@ BELOW ARE ALL SELECTORS FOR CLASSES PRESENT IN CONTACT.HTML*/
     grid-row: 1/2;
     grid-row: span 2;
   }
-
   #contact-form #submit-message {
-    height: 50px;
+    height: 200px;
     width: auto;
   }
 }
