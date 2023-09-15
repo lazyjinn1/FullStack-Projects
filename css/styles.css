@@ -30,7 +30,7 @@
 BELOW ARE ALL SELECTORS FOR SPECIFIC TAGS*/
 /*These are the default settings for normal text*/
 body {
-    margin: 0 10% 0 10%;
+    margin: 0 40px 0 40px;
     background-color: var(--background-color);
     font-family: "Rubik", sans-serif;
     font-weight: var(--default-font-weight);;
@@ -245,25 +245,20 @@ body {
   /*These are the default settings for all <page-footer>s*/
   .page-footer {
     display: flex;
+    width: 100%;
+    min-width: 200px;
     flex-direction: column;
     box-sizing: border-box;
+    flex-wrap: nowrap;
   }
-  .page-footer img {
-    width: 80%;
+  .Links img {
+    width: 5%;
     height: auto;
     transition: all 0.25s;
     opacity: 1;
   }
-  .page-footer img:hover {
+  .Links img:hover {
     transform: var(--scale-up);
-    opacity: 0.8;
-  }
-  .page-footer a {
-    width: 80%;
-    height: auto;
-    transition: all 0.25s;
-  }
-  .page-footer a:hover {
     opacity: 0.8;
   }
   .page-footer #footer-title {
@@ -275,10 +270,8 @@ body {
     box-sizing: border-box;
     text-align: center;
   }
-  .page-footer .Links .social-media {
-    display: inline-block;
-  }
-  
+
+
   /*These are the settings for the <directory> class*/
   .directory {
     display: grid;
@@ -354,13 +347,8 @@ body {
       font-size: 80%;
     }
     .page-footer img {
-      width: 115%;
+      width: 15%;
       height: auto;
-    }
-  }
-  @media all and (max-width: 400px) {
-    .Links {
-      Right: 13%;
     }
   }
   /*ABOVE ARE ALL SELECTORS FOR CLASSES PRESENT IN ALL PAGES
