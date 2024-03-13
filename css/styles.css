@@ -814,11 +814,18 @@ body {
     background-color: none;
     margin-bottom: 25px;
   }
-  .project-image{
+  .project-image {
     width: 400px;
+    max-height: 600px;
     border: none;
     border-radius: 25px;
   }
+
+  .project-image #chat-app-image{
+    width: 150px;
+    max-height: 300px;
+  }
+  
   
   @media all and (min-width: 2000px) {
     .project-image-button:hover{
